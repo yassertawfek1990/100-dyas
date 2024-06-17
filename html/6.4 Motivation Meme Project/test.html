@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Next to Each Other</title>
+    <style>
+        .image-container {
+            text-align: center; /* Center the images within the container */
+        }
+        .image-container img {
+            width: 30%; /* Each image takes up 30% of the container's width */
+            margin-right: 2%; /* Add space between images */
+        }
+        .image-container img:last-child {
+            margin-right: 0; /* Remove margin from the last image */
+        }
+        /* Ensure images are responsive */
+        @media (max-width: 800px) {
+            .image-container img {
+                width: 100%; /* Images take full width on small screens */
+                margin-right: 0;
+                margin-bottom: 10px; /* Adds space below images */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="assets\images\daenerys.jpeg" alt="Image 1">
+        <img src="assets\images\daenerys.jpeg" alt="Image 2">
+        <img src="assets\images\daenerys.jpeg" alt="Image 3">
+    </div>
+</body>
+</html>
